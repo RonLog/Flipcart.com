@@ -46,7 +46,7 @@ nav ul ul li {
     height: 30px;
     margin-top: 20px;
     border-bottom: 1px solid lightgrey;
-    width:230px;
+    width: 230px;
     cursor: pointer;
     /* padding-top: 10px; */
     /* text-align: center; */
@@ -107,21 +107,25 @@ nav ul li:hover ul {
     border-radius: 10px;
     /* box-sizing: border-box; */
 }
-.fashion ul li ul{
+
+.fashion ul li ul {
     display: none;
     position: absolute;
-    top:15px;
-    left:220px;
+    top: 15px;
+    left: 220px;
     z-index: 2;
 }
-.fashion ul li:hover ul{
+
+.fashion ul li:hover ul {
     display: block;
     /* margin-left: 210px; */
 }
+
 .fashion ul li {
     padding: 10px 5px;
 }
-.fashion ul li:hover a{
+
+.fashion ul li:hover a {
     color: rgb(40, 116, 240);
 }
 
@@ -144,17 +148,20 @@ nav ul li:hover ul {
 .electronics ul li {
     padding: 10px 5px;
 }
-.electronics ul li:hover a{
+
+.electronics ul li:hover a {
     color: rgb(40, 116, 240);
 }
-.electronics ul li ul{
+
+.electronics ul li ul {
     display: none;
     position: absolute;
-    top:15px;
-    left:220px;
+    top: 15px;
+    left: 220px;
     z-index: 2;
 }
-.electronics ul li:hover ul{
+
+.electronics ul li:hover ul {
     display: block;
     /* margin-left: 210px; */
 }
@@ -178,19 +185,20 @@ nav ul li:hover ul {
     padding: 10px 5px;
 }
 
-.beautyMore ul li ul{
+.beautyMore ul li ul {
     display: none;
     position: absolute;
-    top:15px;
-    left:220px;
+    top: 15px;
+    left: 220px;
     z-index: 2;
 }
-.beautyMore ul li:hover ul{
+
+.beautyMore ul li:hover ul {
     display: block;
     /* margin-left: 210px; */
 }
 
-.beautyMore ul li:hover a{
+.beautyMore ul li:hover a {
     color: rgb(40, 116, 240);
 }
 
@@ -214,26 +222,28 @@ nav ul li:hover ul {
     padding: 10px 5px;
 
 }
-.home ul li ul{
+
+.home ul li ul {
     display: none;
     position: absolute;
-    top:15px;
-    left:220px;
+    top: 15px;
+    left: 220px;
     z-index: 2;
 }
-.home ul li:hover ul{
+
+.home ul li:hover ul {
     display: block;
     /* margin-left: 210px; */
 }
 
-.home ul li:hover a{
+.home ul li:hover a {
     color: rgb(40, 116, 240);
 }
 
 .homeright {
     border-left: 1px solid lightgray;
     margin-left: 200px;
-    
+
 }
 
 
@@ -242,7 +252,7 @@ nav ul li:hover ul {
     justify-content: space-evenly;
     margin-top: 100px;
     box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
-   
+
 
 }
 
@@ -260,25 +270,30 @@ nav ul li:hover ul {
     color: black;
     font-weight: bold;
 }
-.offer1 div{
+
+.offer1 div {
     display: none;
 }
-.fashion{
+
+.fashion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
-.fashionleft{
-     display: flex;
-    flex-direction: column; 
+
+.fashionleft {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 .fashion ul {
     list-style: none;
     background-color: white;
 }
-.offer1:hover div{
+
+.offer1:hover div {
     position: absolute;
     top: 100px;
     display: block;
@@ -313,6 +328,59 @@ nav ul li:hover ul {
 .bestofkitchen {
     /* margin: 40px auto; */
     text-align: center;
+}
+
+.mainlinks {
+    width: 90%;
+    margin: auto;
+}
+
+.linkhead {
+    font-size: larger;
+    font-weight: bold;
+
+}
+.alink{
+    text-decoration: none;
+    color:black;
+}
+.alink:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+.linkhead .head {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.linksubhead {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.linksubhead .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.maindescription {
+    width: 90%;
+    margin: auto;
+}
+
+.description {
+    margin-top: 50px;
+    color: gray;
+}
+
+.description h1,
+h2 {
+    color: gray;
+    font-size: large;
+    font-weight: bold;
 }
 
 footer {
@@ -350,8 +418,9 @@ footer {
     justify-content: space-between;
     color: white;
     align-items: center;
-    
+
 }
-#foot a:hover{
+
+#foot a:hover {
     text-decoration: none;
 }
