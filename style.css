@@ -98,6 +98,7 @@ nav ul li:hover ul {
 .search button {
     border: none;
 }
+
 .fashion ul {
     list-style: none;
     background-color: white;
@@ -106,7 +107,17 @@ nav ul li:hover ul {
     border-radius: 10px;
     /* box-sizing: border-box; */
 }
-
+.fashion ul li ul{
+    display: none;
+    position: absolute;
+    top:15px;
+    left:220px;
+    z-index: 2;
+}
+.fashion ul li:hover ul{
+    display: block;
+    /* margin-left: 210px; */
+}
 .fashion ul li {
     padding: 10px 5px;
 }
@@ -119,6 +130,7 @@ nav ul li:hover ul {
     margin-left: 210px;
     /* margin-top: 30px; */
 }
+
 .electronics ul {
     list-style: none;
     background-color: white;
@@ -128,11 +140,23 @@ nav ul li:hover ul {
     /* box-sizing: border-box; */
 }
 
+
 .electronics ul li {
     padding: 10px 5px;
 }
 .electronics ul li:hover a{
     color: rgb(40, 116, 240);
+}
+.electronics ul li ul{
+    display: none;
+    position: absolute;
+    top:15px;
+    left:220px;
+    z-index: 2;
+}
+.electronics ul li:hover ul{
+    display: block;
+    /* margin-left: 210px; */
 }
 
 .electronicsright {
@@ -152,6 +176,18 @@ nav ul li:hover ul {
 
 .beautyMore ul li {
     padding: 10px 5px;
+}
+
+.beautyMore ul li ul{
+    display: none;
+    position: absolute;
+    top:15px;
+    left:220px;
+    z-index: 2;
+}
+.beautyMore ul li:hover ul{
+    display: block;
+    /* margin-left: 210px; */
 }
 
 .beautyMore ul li:hover a{
@@ -178,6 +214,17 @@ nav ul li:hover ul {
     padding: 10px 5px;
 
 }
+.home ul li ul{
+    display: none;
+    position: absolute;
+    top:15px;
+    left:220px;
+    z-index: 2;
+}
+.home ul li:hover ul{
+    display: block;
+    /* margin-left: 210px; */
+}
 
 .home ul li:hover a{
     color: rgb(40, 116, 240);
@@ -188,6 +235,8 @@ nav ul li:hover ul {
     margin-left: 200px;
     
 }
+
+
 .offer {
     display: flex;
     justify-content: space-evenly;
