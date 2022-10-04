@@ -14,6 +14,7 @@ header {
     height: 10%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -45,6 +46,8 @@ nav ul ul li {
     height: 30px;
     margin-top: 20px;
     border-bottom: 1px solid lightgrey;
+    width:230px;
+    cursor: pointer;
     /* padding-top: 10px; */
     /* text-align: center; */
 }
@@ -62,6 +65,7 @@ nav ul li:hover ul {
     cursor: pointer;
     margin: 0;
     padding: 0;
+    border-radius: 5px;
 
 }
 
@@ -71,6 +75,8 @@ nav ul li:hover ul {
     position: absolute;
     top: 50px;
     right: 100px;
+    border-radius: 10px;
+
 }
 
 .more:hover #moresub {
@@ -92,15 +98,102 @@ nav ul li:hover ul {
 .search button {
     border: none;
 }
+.fashion ul {
+    list-style: none;
+    background-color: white;
+    height: 500px;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
 
+.fashion ul li {
+    padding: 10px 5px;
+}
+.fashion ul li:hover a{
+    color: rgb(40, 116, 240);
+}
+
+.fashionright {
+    border-left: 1px solid lightgray;
+    margin-left: 210px;
+    /* margin-top: 30px; */
+}
+.electronics ul {
+    list-style: none;
+    background-color: white;
+    height: 500px;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+
+.electronics ul li {
+    padding: 10px 5px;
+}
+.electronics ul li:hover a{
+    color: rgb(40, 116, 240);
+}
+
+.electronicsright {
+    border-left: 1px solid lightgray;
+    margin-left: 210px;
+    /* margin-top: 30px; */
+}
+
+
+.beautyMore ul {
+    list-style: none;
+    background-color: white;
+    height: 500px;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+}
+
+.beautyMore ul li {
+    padding: 10px 5px;
+}
+
+.beautyMore ul li:hover a{
+    color: rgb(40, 116, 240);
+}
+
+.beautyMoreright {
+    border-left: 1px solid lightgray;
+    margin-left: 210px;
+    /* margin-top: 30px; */
+}
+
+
+.home ul {
+    list-style: none;
+    background-color: white;
+    height: 500px;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+
+}
+
+.home ul li {
+    padding: 10px 5px;
+
+}
+
+.home ul li:hover a{
+    color: rgb(40, 116, 240);
+}
+
+.homeright {
+    border-left: 1px solid lightgray;
+    margin-left: 200px;
+    
+}
 .offer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
     box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
-    /* background-color: lightgray; */
-    /* justify-content: center ; */
-    /* border: 1px solid black; */
+   
 
 }
 
@@ -125,7 +218,7 @@ nav ul li:hover ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: white; */
+    
 }
 .fashionleft{
      display: flex;
@@ -143,11 +236,7 @@ nav ul li:hover ul {
 }
 
 
-/* .offer1 img:hover a {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-} */
+
 
 .sale3 {
 
@@ -212,7 +301,7 @@ footer {
     justify-content: space-between;
     color: white;
     align-items: center;
-    /* flex-direction: column; */
+    
 }
 #foot a:hover{
     text-decoration: none;
