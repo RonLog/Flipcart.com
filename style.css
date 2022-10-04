@@ -36,7 +36,7 @@ header {
 nav ul li {
     font-weight: bold;
     display: inline;
-    margin-left: 20px;
+    padding-left: 20px;
     cursor: pointer;
 }
 
@@ -44,9 +44,8 @@ nav ul ul li {
     display: block;
     height: 30px;
     margin-top: 20px;
-    margin-right: 20px;
+    border-bottom: 1px solid lightgrey;
     /* padding-top: 10px; */
-    border: 1px solid grey;
     /* text-align: center; */
 }
 
