@@ -7,11 +7,11 @@ header {
     color: white;
     background-color: rgb(40, 116, 240);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     width: 100%;
-    height: 10%;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -27,6 +27,10 @@ header {
     color: white;
     font-style: italic;
     font-size: 13px;
+}
+
+.logo a span{
+    color: yellow;
 }
 
 .logo a:hover {
@@ -48,8 +52,7 @@ nav ul ul li {
     border-bottom: 1px solid lightgrey;
     width: 230px;
     cursor: pointer;
-    /* padding-top: 10px; */
-    /* text-align: center; */
+
 }
 
 nav ul ul {
@@ -73,7 +76,6 @@ nav ul li:hover ul {
 #moresub {
     display: none;
     position: absolute;
-    top: 50px;
     right: 100px;
     border-radius: 10px;
 
@@ -88,6 +90,13 @@ nav ul li:hover ul {
     border: none;
 }
 
+.search input[type='text'] {
+    width: 700px;
+    height: 32px;
+    border: none;
+    outline: none;
+}
+
 .search button i {
     color: rgb(40, 116, 240);
     height: 30px;
@@ -99,13 +108,23 @@ nav ul li:hover ul {
     border: none;
 }
 
+
+.login input[type='button'] {
+    width: 130px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(40, 116, 240);
+    padding: 10px 30px;
+    border: none;
+}
+
 .fashion ul {
     list-style: none;
     background-color: white;
     height: 500px;
     box-shadow: 10px 10px 5px black;
     border-radius: 10px;
-    /* box-sizing: border-box; */
+
 }
 
 .fashion ul li ul {
@@ -118,21 +137,21 @@ nav ul li:hover ul {
 
 .fashion ul li:hover ul {
     display: block;
-    /* margin-left: 210px; */
+
 }
 
 .fashion ul li {
     padding: 10px 5px;
 }
 
-.fashion ul li:hover a {
+.fashion ul>li>a:hover {
     color: rgb(40, 116, 240);
 }
 
 .fashionright {
     border-left: 1px solid lightgray;
     margin-left: 210px;
-    /* margin-top: 30px; */
+
 }
 
 .electronics ul {
@@ -141,7 +160,7 @@ nav ul li:hover ul {
     height: 500px;
     box-shadow: 10px 10px 5px black;
     border-radius: 10px;
-    /* box-sizing: border-box; */
+
 }
 
 
@@ -149,7 +168,7 @@ nav ul li:hover ul {
     padding: 10px 5px;
 }
 
-.electronics ul li:hover a {
+.electronics ul>li>a:hover {
     color: rgb(40, 116, 240);
 }
 
@@ -163,13 +182,13 @@ nav ul li:hover ul {
 
 .electronics ul li:hover ul {
     display: block;
-    /* margin-left: 210px; */
+
 }
 
 .electronicsright {
     border-left: 1px solid lightgray;
     margin-left: 210px;
-    /* margin-top: 30px; */
+
 }
 
 
@@ -195,17 +214,17 @@ nav ul li:hover ul {
 
 .beautyMore ul li:hover ul {
     display: block;
-    /* margin-left: 210px; */
+
 }
 
-.beautyMore ul li:hover a {
+.beautyMore ul>li>a:hover {
     color: rgb(40, 116, 240);
 }
 
 .beautyMoreright {
     border-left: 1px solid lightgray;
     margin-left: 210px;
-    /* margin-top: 30px; */
+
 }
 
 
@@ -233,7 +252,7 @@ nav ul li:hover ul {
 
 .home ul li:hover ul {
     display: block;
-    /* margin-left: 210px; */
+
 }
 
 .home ul li:hover a {
@@ -275,6 +294,12 @@ nav ul li:hover ul {
     display: none;
 }
 
+.offer1:hover div {
+    position: absolute;
+    top: 100px;
+    display: block;
+}
+
 .fashion {
     display: flex;
     flex-direction: row;
@@ -293,17 +318,7 @@ nav ul li:hover ul {
     background-color: white;
 }
 
-.offer1:hover div {
-    position: absolute;
-    top: 100px;
-    display: block;
-}
-
-
-
-
 .sale3 {
-
     margin: 40px auto;
     text-align: center;
 }
@@ -321,12 +336,12 @@ nav ul li:hover ul {
 }
 
 .knowmore {
-    /* margin: 40px auto; */
+
     text-align: center;
 }
 
 .bestofkitchen {
-    /* margin: 40px auto; */
+
     text-align: center;
 }
 
@@ -340,11 +355,13 @@ nav ul li:hover ul {
     font-weight: bold;
 
 }
-.alink{
+
+.alink {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-.alink:hover{
+
+.alink:hover {
     text-decoration: underline;
     color: gray;
 }
@@ -385,6 +402,7 @@ h2 {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
     background-color: rgb(23, 35, 55);
@@ -415,6 +433,7 @@ footer {
 .footdown {
     background-color: rgb(23, 35, 55);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: white;
     align-items: center;
@@ -423,4 +442,30 @@ footer {
 
 #foot a:hover {
     text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    header > *{
+        padding-top: 10px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .search input[type='text'] {
+        width: 400px;
+    }
+
+    #moresub {
+        right: 10px;
+    }
+
+    .offer {
+        margin-top: 150px;
+        align-items: baseline;
+        align-content: center;
+        overflow-x: auto;
+    }
+
 }
