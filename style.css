@@ -29,7 +29,7 @@ header {
     font-size: 13px;
 }
 
-.logo a span{
+.logo a span {
     color: yellow;
 }
 
@@ -175,7 +175,7 @@ nav ul li:hover ul {
 .electronics ul li ul {
     display: none;
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 220px;
     z-index: 2;
 }
@@ -207,7 +207,7 @@ nav ul li:hover ul {
 .beautyMore ul li ul {
     display: none;
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 220px;
     z-index: 2;
 }
@@ -245,7 +245,7 @@ nav ul li:hover ul {
 .home ul li ul {
     display: none;
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 220px;
     z-index: 2;
 }
@@ -271,8 +271,6 @@ nav ul li:hover ul {
     justify-content: space-evenly;
     margin-top: 100px;
     box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .offer1 {
@@ -322,6 +320,7 @@ nav ul li:hover ul {
     margin: 40px auto;
     text-align: center;
 }
+
 
 .sale9 {
 
@@ -444,17 +443,37 @@ footer {
     text-decoration: none;
 }
 
-@media screen and (max-width:600px) {
-    header > *{
-        padding-top: 10px;
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .offer {
+        margin-top: 150px;
     }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header>* {
+        padding: 10px;
+    }
+
+    header nav ul li>* {
+        padding: 10px;
+    }
+
     nav ul {
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .search input[type='text'] {
-        width: 400px;
+        /* width: 400px; */
+        width: 100%;
     }
 
     #moresub {
@@ -462,10 +481,30 @@ footer {
     }
 
     .offer {
-        margin-top: 150px;
+        margin-top: 220px;
         align-items: baseline;
         align-content: center;
         overflow-x: auto;
+    }
+
+    .sale3 img {
+        width: 100%;
+    }
+
+    .knowmore img {
+        width: 100%;
+    }
+
+    .sale9 img {
+        width: 100%;
+    }
+
+    .bestofkitchen img {
+        width: 100%;
+    }
+
+    .sale4 img {
+        width: 100%;
     }
 
 }
