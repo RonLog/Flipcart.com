@@ -108,6 +108,11 @@ nav ul li:hover ul {
     border: none;
 }
 
+.fa-user-circle,
+.fa-plus-square {
+    color: rgb(232, 18, 36);
+}
+
 
 .login input[type='button'] {
     width: 130px;
@@ -124,7 +129,6 @@ nav ul li:hover ul {
     height: 500px;
     box-shadow: 10px 10px 5px black;
     border-radius: 10px;
-
 }
 
 .fashion ul li ul {
