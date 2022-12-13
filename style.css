@@ -290,6 +290,7 @@ nav ul li:hover ul {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .offer1 div {
@@ -450,6 +451,7 @@ footer {
 @media screen and (min-width:768px) and (max-width:1024px) {
     .offer {
         margin-top: 150px;
+        justify-content: flex-start;
     }
 }
 
@@ -475,8 +477,12 @@ footer {
         align-items: center;
     }
 
+    .search {
+        padding: 0;
+        width: 100%;
+    }
+
     .search input[type='text'] {
-        /* width: 400px; */
         width: 100%;
     }
 
@@ -489,6 +495,7 @@ footer {
         align-items: baseline;
         align-content: center;
         overflow-x: auto;
+        justify-content: flex-start;
     }
 
     .sale3 img {
