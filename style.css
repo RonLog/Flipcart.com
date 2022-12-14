@@ -367,6 +367,7 @@ nav ul li:hover ul {
 .alink {
     text-decoration: none;
     color: black;
+    word-wrap: break-word;
 }
 
 .alink:hover {
